@@ -12,6 +12,8 @@ namespace Prueba
         {
             Console.WriteLine("Changes");
             Console.ReadKey();
+            Fibonacci obj = new Fibonacci();
+            obj.calcular(56);
         }
     }
 }
