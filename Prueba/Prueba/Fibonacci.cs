@@ -8,21 +8,11 @@ namespace Prueba
 {
     class Fibonacci
     {
-        public int calcular(int a)
+        public int calcular(int x)
         {
-            int res;
-            while (a < 2)
-            {
-                a = res;
-                Console.WriteLine("Resultado", res);
-                
-            }
-              while (a > 2)
-            {
-                res= (a-1)+(a-2);
-                Console.WriteLine(res);
-            }
-              return  res;
+            if (x <= 1)
+                return 1;
+            return calcular(x - 1) + calcular(x - 2);
 
         }
     }
